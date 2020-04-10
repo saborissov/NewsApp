@@ -26,6 +26,7 @@ class OneNewsViewController: UIViewController {
 
         labelTitle.text = article.title
         labelDescription.text = article.description
+        imageView.image = UIImage(data: try! Data(contentsOf: URL(string:article.urlToImage)!))
     
     }
     
